@@ -1,0 +1,384 @@
+/* Responsive CSS for Yara Restaurant */
+
+/* General Responsive Settings */
+@media (max-width: 1200px) {
+    h1 {
+      font-size: 4rem !important;
+    }
+    
+    .hero-content p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    h1 {
+      font-size: 3.5rem !important;
+    }
+    .hero-content p {
+      font-size: 1rem;
+    }
+    
+    .navbar-brand img {
+      height: 50px;
+    }
+  
+    .social-icon {
+      margin: 0 5px;
+    }
+    
+    .hero-content {
+      width: 80% !important;
+    }
+  
+    .carousel-item {
+      height: 90vh;
+    }
+    
+    .welcome-box {
+      padding: 2.5rem;
+    }
+    
+    .category-box {
+      height: 450px;
+    }
+    
+    .events-image {
+      height: auto;
+      width: 100%;
+    }
+    
+    .booking-form {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.5rem !important;
+    }
+    .hero-content p {
+      font-size: 1rem;
+    }
+
+    .welcome-text {
+      font-size: 1rem;
+    }
+    .welcome-text2 {
+      font-size: 1.2rem;
+    }
+    
+    .nav-link:after {
+      bottom: -5px;
+    }
+    
+    .hero-content {
+      width: 100%;
+      padding: 0 15px;
+    }
+    
+    .carousel-item {
+      height: 70vh;
+    }
+    
+    .welcome-section {
+      padding: 20px 0;
+    }
+    
+    .welcome-box {
+      padding: 2rem;
+      margin-top: 20px;
+    }
+    
+    .menu-section, .booking-section, .video-section, .events-section, .social-social, .info-section {
+      padding: 40px 0 20px 0;
+    }
+    
+    .category-box {
+      height: 350px;
+      margin-bottom: 20px;
+    }
+    
+    .menu-card {
+      padding: 1.5rem;
+    }
+    
+    .gallery-item {
+      height: 120px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 1.4rem !important;
+    }
+    .hero-content p {
+      font-size: .8rem;
+    }
+
+    .hero-content {
+      position: absolute;
+      top: 55%;
+      left: 50%;
+    }
+    .divider img {
+      height: 24px;
+    }
+    .butterfly-icon {
+      position: absolute; 
+      top: -12px; 
+      z-index: 999;
+    }
+    .welcome-text {
+      font-size: .7rem;
+    }
+    .welcome-text2 {
+      font-size: .9rem;
+    }
+    
+    .btn-gold, .btn-outline-gold {
+      padding: 6px 18px;
+      font-size: 14px;
+    }
+    
+    .navbar-brand img {
+      height: 32px;
+    }
+
+    .navbar-toggler-icon {
+      width: 1.2rem !important;
+      height: 1.2em !important;
+    }
+    
+    .carousel-item {
+      height: 60vh;
+    }
+    
+    .welcome-box {
+      padding: 1.5rem;
+    }
+    
+    .menu-card {
+      padding: 1rem;
+    }
+    
+    .category-box {
+      height: 250px;
+    }
+    
+    .category-name {
+      font-size: 1.2rem;
+      padding: 10px;
+    }
+    
+    .booking-form {
+      padding: 20px 15px;
+    }
+    
+    .footer {
+      padding: 40px 0 15px;
+    }
+
+    .footer-divider {
+      display: none;
+    }
+
+    .footer-logo img {
+      height: 40px;
+    }
+    
+    .footer-text {
+      font-size: 12px;
+    }
+    
+    .social-item {
+      height: 80px;
+      margin-bottom: 15px;
+    }
+  }
+  
+  /* Navbar Responsive Settings */
+  @media (max-width: 992px) {
+    .navbar {
+      background-color: rgba(5, 39, 51, 0.95);
+      padding: 10px 0 !important;
+    }
+    
+    .navbar-collapse {
+      background-color: rgba(5, 39, 51, 0.95);
+      padding: 20px;
+      margin-top: 10px;
+    }
+    
+    .navbar-nav {
+      margin-bottom: 20px;
+    }
+    
+    .nav-link {
+      padding: 10px 0;
+      margin: 0;
+    }
+    
+    .d-flex.align-items-center.gap-3 {
+      margin-bottom: 15px;
+    }
+    
+    .d-flex.align-items-center.social-icon {
+      justify-content: center;
+    }
+  }
+  
+  /* Menu Modal Responsive Settings */
+  @media (max-width: 768px) {
+    .menu-modal .modal-title {
+      font-size: 2rem;
+    }
+    
+    .menu-section-title {
+      font-size: 1.5rem;
+    }
+    
+    .menu-item-name, .menu-item-price {
+      font-size: 1rem;
+    }
+    
+    .modal-dialog {
+      max-width: 95%;
+      margin: 10px auto;
+    }
+  }
+  
+  /* Video Section Responsive */
+  @media (max-width: 768px) {
+    .play-btn {
+      width: 60px;
+      height: 60px;
+    }
+    
+    .play-btn i {
+      font-size: 1.5rem !important;
+    }
+  }
+  
+  /* Fix for small mobile devices */
+  @media (max-width: 360px) {
+    h1 {
+      font-size: 1.4frem !important;
+    }
+    
+    .hero-content p {
+      font-size: 0.8rem;
+    }
+
+    .welcome-text {
+      font-size: .6rem;
+    }
+    .welcome-text2 {
+      font-size: .7rem;
+    }
+    
+    .btn-gold, .btn-outline-gold {
+      padding: 4px 8px;
+      font-size: 12px;
+      display: block;
+      margin: 10px auto;
+      width: 50%;
+      text-align: center;
+    }
+    
+    .hero-content .mt-2.d-flex {
+      flex-direction: row;
+    }
+
+    .hero-content {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+    }
+
+    .info-box {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+  
+  .info-box h5 {
+      color: var(--light-color);
+      margin-bottom: 10px;
+      font-size: 16px;
+      letter-spacing: 1px;
+  }
+
+  .menu-modal .modal-header {
+    padding: 15px;
+  }
+  .menu-modal .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+  }
+  .menu-modal .modal-title {
+    font-size: 1.2rem;
+  }
+  .modal-body {
+    max-height: 100%;
+  }
+  .menu-section-title {
+    font-size: 1rem;
+  }
+  
+  .menu-item-name, .menu-item-price {
+    font-size: .8rem;
+  }
+
+  .menu-item-description {
+    font-size: .7rem;
+  }
+  
+  .modal-dialog {
+    max-width: 95%;
+    margin: 10px auto;
+  }
+
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    height: 1.2rem !important;
+    width: 1.2rem !important;
+  }
+  
+  }
+  
+  /* social section adjustments */
+  @media (max-width: 768px) {
+    .social-social .col-md-15 {
+      width: 33.33%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .social-social .col-md-15 {
+      width: 50%;
+    }
+  }
+  
+  /* Fix for menu categories on mobile */
+  @media (max-width: 576px) {
+    .menu-categories .row {
+      margin: 0 -5px;
+    }
+    
+    .menu-categories .col-md-4 {
+      padding: 0 5px;
+    }
+  }
+  
+  /* Improve form elements readability on mobile */
+  @media (max-width: 576px) {
+    .booking-form .form-control {
+      font-size: 14px;
+      padding: 10px;
+    }
+    
+    .booking-form .form-control::placeholder {
+      font-size: 14px;
+    }
+  }
