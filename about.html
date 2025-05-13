@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yara Restaurant</title>
+  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/assets/responsive.css">
+  <script src="/assets/responsive-scripts.js"></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/index.html">
+        <img src="/assets/logo.png" alt="Yara Restaurant">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center gap-3 mx-auto">
+          <a href="#" class="text-light fs-5">
+            <i class="fas fa-search"></i>
+          </a>
+          <a href="#" class="btn-gold">Reservation</a>
+        </div>
+        <div class="d-flex align-items-left social-icon mt-0">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+             
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" style="background: url('/assets/about/banner-3.png') center center / cover no-repeat; height: 100vh; position: relative;">
+    <div class="container">
+      <div class="row">
+        <div class="d-flex align-items-center justify-content-center text-center min-vh-100">
+          <div class="col-lg-8 hero-content">
+            <h1 style="font-size: 6rem; color: #ffe8ce;">About US</h1>
+            <div class="mt-4 d-flex justify-content-center">
+                <a href="#" class="btn-gold me-3" data-bs-toggle="modal" data-bs-target="#menuModal">Our Menu</a>
+                <a href="#" class="btn-outline-gold">Book a Table</a>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="divider">
+    <img class="butterfly-icon" src="/assets/Divider1.png" alt="Divider">
+  </div>
+
+ <!-- Welcome Section -->
+<section class="welcome-section">
+  <div class="container my-5">
+    <div class="row align-items-center">
+      
+      <!-- Image 2 (Now appears first) -->
+      <div class="col-lg-3 col-md-6 order-lg-2 order-2 mb-2 image-hover-zoom">
+        <img src="/assets/about-2.png" alt="Restaurant Food" class="img-fluid rounded">
+      </div>
+    
+      <!-- Image 1 -->
+       <div class="col-lg-3 col-md-6 order-lg-1 order-1 mb-2 mb-lg-0">
+        <div class="position-relative image-hover-zoom">
+            <img src="/assets/about-1.png" alt="Restaurant Food" class="img-fluid rounded">
+            <div class="overlay-experience position-absolute bottom-0 start-0 mb-3 ms-3" style="color: #ffe8ce;">
+                <div class="d-flex align-items-center gap-2">
+                <h1 class="m-0 display-3" style="font-family: var(--font-primary); font-weight: 500;">12</h1>
+                <h5 class="m-0" style="font-family: var(--font-primary); font-weight: 500; line-height: 1.2;">
+                    Years of<br>Experience
+                </h5>
+                </div>
+            </div>
+        </div>
+
+      </div>
+
+      <!-- Welcome Card (Now appears last) -->
+      <div class="col-lg-6 order-lg-3 order-3">
+        <div class="welcome-box shadow-lg rounded text-center mb-2">
+          <h2 class="mb-3" style="font-family: var(--font-tertiary);">Welcome to Yara</h2>
+          <img src="/assets/Divider-3.png" alt="Divider" class="divider-img mb-3">
+          <p class="welcome-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- Feature Section -->
+  <section class="feature-section">
+    <div class="container my-5">
+      <div class="row align-items-center mb-4">
+        <div class="col-lg-4 order-lg-1 order-2">
+          <div class="text-center mb-2">
+            <img src="/assets/about/menu.png" alt="Daily Fresh Menus" class="divider-img mb-4">
+            <h5 class="mb-3" style="font-family: var(--font-secondary); color: var(--light-color);">Daily Fresh Menus</h5>
+            <p class="welcome-text">
+              We help you treat yourself with a different meal everyday, thanks to our daily changing menus and our awesome creative chefs!
+            </p>
+          </div>          
+        </div>
+        <div class="col-lg-4 order-lg-1 order-2">
+          <div class="text-center mb-2">
+            <img src="/assets/about/fresh.png" alt="Daily Fresh Menus" class="divider-img mb-4">
+            <h5 class="mb-3" style="font-family: var(--font-secondary); color: var(--light-color);">Fresh Ingredient</h5>
+            <p class="welcome-text">
+              We help you treat yourself with a different meal everyday, thanks to our daily changing menus and our awesome creative chefs!
+            </p>
+          </div>          
+        </div>
+        <div class="col-lg-4 order-lg-1 order-2">
+          <div class="text-center mb-2">
+            <img src="/assets/about/tasty_meals.png" alt="Daily Fresh Menus" class="divider-img mb-4">
+            <h5 class="mb-3" style="font-family: var(--font-secondary); color: var(--light-color);">Tasty Meals</h5>
+            <p class="welcome-text">
+              We help you treat yourself with a different meal everyday, thanks to our daily changing menus and our awesome creative chefs!
+            </p>
+          </div>          
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-4 order-lg-1 order-2">
+          <div class="text-center mb-2">
+            <img src="/assets/about/chef.png" alt="Daily Fresh Menus" class="divider-img mb-4">
+            <h5 class="mb-3" style="font-family: var(--font-secondary); color: var(--light-color);">Creative Chef</h5>
+            <p class="welcome-text">
+              We help you treat yourself with a different meal everyday, thanks to our daily changing menus and our awesome creative chefs!
+            </p>
+          </div>          
+        </div>
+        <div class="col-lg-4 order-lg-1 order-2">
+          <div class="text-center mb-2">
+            <img src="/assets/about/pizza.png" alt="Daily Fresh Menus" class="divider-img mb-4">
+            <h5 class="mb-3" style="font-family: var(--font-secondary); color: var(--light-color);">Real Pizza</h5>
+            <p class="welcome-text">
+              We help you treat yourself with a different meal everyday, thanks to our daily changing menus and our awesome creative chefs!
+            </p>
+          </div>          
+        </div>
+        <div class="col-lg-4 order-lg-1 order-2">
+          <div class="text-center mb-2">
+            <img src="/assets/about/coffee.png" alt="Daily Fresh Menus" class="divider-img mb-4">
+            <h5 class="mb-3" style="font-family: var(--font-secondary); color: var(--light-color);">Awesome Coffee</h5>
+            <p class="welcome-text">
+              We help you treat yourself with a different meal everyday, thanks to our daily changing menus and our awesome creative chefs!
+            </p>
+          </div>          
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- Testimonial Section -->
+<!-- <section class="testimonial-section py-5">
+  <div class="container">
+    <div class="row justify-content-center mb-4">
+      <div class="col-lg-8 text-center">
+        <h2 style="font-family: var(--font-primary); color: var(--secondary-color);">People Say About Us!</h2>
+      </div>
+    </div>
+    <img src="/assets/Divider-3.png" alt="Divider" class="divider-img mb-3">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="testimonial-box p-4 shadow-sm rounded">
+            <div class="d-flex align-items-center mb-3">
+                <img src="/assets/about/Ellipse 1.png" alt="John Doe" class="rounded-circle me-3" width="50" height="50">
+                <div>
+                <div class="fw-bold" style="font-family: var(--font-tertiary);">John Doe</div>
+                <small class="text-muted d-block">Food Blogger</small>
+                <div class="text-warning my-2">
+                    ★★★★★
+                </div>
+                </div>
+            </div>
+            <p>"Amazing food and great ambiance! Will definitely come again."</p>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="testimonial-box p-4 shadow-sm rounded">
+            <div class="d-flex align-items-center mb-3">
+                <img src="/assets/about/Ellipse 2-1.png" alt="Priya Singh" class="rounded-circle me-3" width="50" height="50">
+                <div>
+                <div class="fw-bold" style="font-family: var(--font-tertiary);">Priya Singh</div>
+                <small class="text-muted d-block">Event Planner</small>
+                <div class="text-warning my-2">
+                    ★★★★☆
+                </div>
+                </div>
+            </div>
+            <p>"The mocktails were refreshing and service was top-notch!"</p>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="testimonial-box p-4 shadow-sm rounded">
+            <div class="d-flex align-items-center mb-3">
+                <img src="/assets/about/Ellipse 2.png" alt="Ayesha Khan" class="rounded-circle me-3" width="50" height="50">
+                <div>
+                <div class="fw-bold" style="font-family: var(--font-tertiary);">Ayesha Khan</div>
+                <small class="text-muted d-block">Marketing Executive</small>
+                <div class="text-warning my-2">
+                    ★★★★★
+                </div>
+                </div>
+            </div>
+            <p>"Lovely atmosphere. A perfect spot for date nights or celebrations."</p>
+            </div>
+        </div>
+    </div>
+  </div>
+</section> -->
+
+<section class="team-section py-5">
+  <div class="container">
+    <div class="row justify-content-center mb-4">
+      <div class="col-lg-8 text-center">
+        <h2 style="font-family: var(--font-primary); color: var(--secondary-color);">People Say About Us!</h2>
+      </div>
+    </div>
+
+    <img src="/assets/Divider-3.png" alt="Divider" class="divider-img mb-5 mx-auto d-block">
+
+    <div class="row">
+      <!-- Team Member 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="team-member-box text-center px-4 py-5 shadow-sm h-100">
+          <img src="/assets/about/Ellipse 1.png" alt="Michael Reynolds" class="rounded-circle mb-3 img-fluid" width="100" height="100">
+          <h4 class="mb-1 text-white" style="font-family: var(--font-secondary);">Michael Reynolds</h4>
+          <small class="d-block mb-2" style="font-weight: 500;">Event Planner</small>
+          <div class="text-warning my-2">
+             ★★★★★
+          </div>
+          <p class="mb-3" style="font-size: 0.95rem;">"Amazing food and great ambiance! Will definitely come again."</p>
+          <!-- <div class="social-icons d-flex justify-content-center gap-3">
+            <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+          </div> -->
+        </div>
+      </div>
+
+      <!-- Team Member 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="team-member-box text-center p-4 shadow-sm h-100">
+          <img src="/assets/about/Ellipse 2.png" alt="Sophia Chen" class="rounded-circle mb-3 img-fluid" width="100" height="100">
+          <h4 class="mb-1 text-white" style="font-family: var(--font-secondary);">Sophia Chen</h4>
+          <small class="d-block mb-2" style="font-weight: 500;">Food Blogger</small>
+          <div class="text-warning my-2">
+            ★★★★☆
+          </div>
+          <p class="mb-3" style="font-size: 0.95rem;">"The mocktails were refreshing and service was top-notch!"</p>
+          <!-- <div class="social-icons d-flex justify-content-center gap-3">
+            <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+          </div> -->
+        </div>
+      </div>
+
+      <!-- Team Member 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="team-member-box text-center p-4 shadow-sm h-100">
+          <img src="/assets/about/Ellipse 2-1.png" alt="Daniel Martin" class="rounded-circle mb-3 img-fluid" width="100" height="100">
+          <h4 class="mb-1 text-white" style="font-family: var(--font-secondary);">Daniel Martin</h4>
+          <small class="d-block mb-2" style="font-weight: 500;">Marketing Executive</small>
+          <div class="text-warning my-2">
+            ★★★★★
+          </div>
+          <p class="mb-3" style="font-size: 0.95rem;">"Lovely atmosphere. A perfect spot for date nights or celebrations."</p>
+          <!-- <div class="social-icons d-flex justify-content-center gap-3">
+            <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ 
+
+  <!-- Reservation Section -->
+<section class="reservation-section" style="min-height: 50vh;">
+    <div class="container h-100">
+        <div class="row h-100">
+        <div class="col-lg-6 d-flex flex-column justify-content-end align-items-center mx-auto">
+            <div class="text-center mb-4">
+            <p class="welcome-text2">Book Your Table</p>
+            <h2 style="color: var(--secondary-color); font-family: var(--font-tertiary);">Make A Reservation</h2>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+
+  <!-- Social Gallery -->
+<section class="social-gallery">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <p class="welcome-text2 text-center mb-2">You can book a table online easily in  just a minute. Reservations are for lunch and dinner, check the availability of your table & book it now! </p>
+                <div class="booking-form">
+                    <form>
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <div class="row">
+                                <div class="col-12 col-md-4 mb-2 mb-md-0">
+                                    <input type="number" class="form-control" placeholder="Number of Persons" min="1" max="20">
+                                </div>
+                                <div class="col-12 col-md-4 mb-2 mb-md-0">
+                                    <input type="date" class="form-control">
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <input type="time" class="form-control">
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit" class="btn-outline-gold w-100">Find A Table</button>
+                        </div>
+                        <p class="welcome-text2 text-center mt-3">
+                            Reservation Powered by 
+                            <span style="color: var(--secondary-color); font-weight: 500;">Opentable</span>
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Divider -->
+  <div class="divider">
+    <img class="butterfly-icon" src="/assets/Divider1.png" alt="Divider">
+  </div>
+
+  <!-- Info Section -->
+  <section class="info-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="info-box">
+                    <h5 class="text-center" style="font-family: var(--font-secondary);">Our Address</h5>
+                    <p class="welcome-text">123 Dummy Street, Ipsum City, Country 00000.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info-box">
+                    <h5 class="text-center" style="font-family: var(--font-secondary);">Opening Hours</h5>
+                    <p class="welcome-text">Mon – Sun: 10:00 AM – 11:00 PM.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="info-box">
+                    <h5 class="text-center" style="font-family: var(--font-secondary);">Private Dining</h5>
+                    <p class="welcome-text">Email: contact@example.com</p>
+                    <p class="welcome-text">Phone: (123) 456-7890</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-divider">
+      <img src="/assets/Dividers.png" alt="Yara" class="img-fluid">
+    </div>
+    <div class="container">
+        <div class="footer-logo">
+            <img src="/assets/logo.png" alt="Yara" class="img-fluid">
+        </div>
+        <div class="footer-text">
+            Yara offers the perfect blend of exclusiveness and comfort. From intimate dinners to stylish brunches, every moment at Yara is crafted to perfection.
+        </div>
+        <div class="footer-action">
+            <a href="#" class="btn-outline-gold">Book Your Table Now!</a>
+        </div>
+        <div class="footer-social">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="copyright">
+            ©️All rights reserved
+        </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    let player;
+  
+    // Load YouTube Iframe API
+    const tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    document.body.appendChild(tag);
+  
+    // Create YouTube player when API is ready
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('video-frame');
+    }
+  
+    $(document).ready(function () {
+      // Navbar scroll background effect
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+          $('.navbar').css('background-color', 'rgba(10, 41, 48, 0.95)');
+        } else {
+          $('.navbar').css('background-color', 'rgba(13, 59, 69, 0.9)');
+        }
+      });
+  
+      // Video play functionality
+      $('.play-btn').click(function () {
+        $('#video-overlay').hide();
+        $('#video-controls').fadeIn();
+        if (player && typeof player.playVideo === 'function') {
+          player.playVideo();
+        }
+      });
+  
+      // Play/pause toggle button
+      $('#play-toggle').click(function () {
+        const state = player.getPlayerState();
+        if (state === YT.PlayerState.PLAYING) {
+          player.pauseVideo();
+          $(this).html('<i class="fas fa-play"></i>');
+        } else {
+          player.playVideo();
+          $(this).html('<i class="fas fa-pause"></i>');
+        }
+      });
+    });
+  </script>
+
+  <!-- Menu Modal -->
+  <div class="modal fade-scale menu-modal" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable custom-scroll modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="menuModalLabel">Discover Our Menu</h5>
+                <button type="button" class="close-btn " data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fas fa-times social-icon"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Breakfast Section -->
+                <div class="menu-section">
+                    <h2 class="menu-section-title">BREAKFAST</h2>
+                    <p class="text-center mb-4">Starts At 8:00 am</p>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Smoked Meat Sandwich</span>
+                            <span class="menu-item-price">$12.95</span>
+                        </div>
+                        <div class="menu-item-description">Baguette, beet, arugula, olives, cherry-tomatoes.</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Salmon Sandwich</span>
+                            <span class="menu-item-price">$14.95</span>
+                        </div>
+                        <div class="menu-item-description">Salmon, butter, lemon juice, onion, garlic & salad.</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Pan of Fried Eggs <span class="menu-badge">RECOMMENDED</span></span>
+                            <span class="menu-item-price">$13.95</span>
+                        </div>
+                        <div class="menu-item-description">Eggs, bacon and cherry-tomatoes with bread.</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Breakfast Set</span>
+                            <span class="menu-item-price">$20.95</span>
+                        </div>
+                        <div class="menu-item-description">Croissants with strawberries, mascarpone, honey.</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Healthy Breakfast</span>
+                            <span class="menu-item-price">$18.95</span>
+                        </div>
+                        <div class="menu-item-description">Oat granola with fresh blueberries, almond, yogurt.</div>
+                    </div>
+                </div>
+                
+                <!-- Lunch Section -->
+                <div class="menu-section">
+                    <h2 class="menu-section-title">LUNCH & DINNER</h2>
+                    <p class="text-center mb-4">Served from 12:00 pm</p>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Chicken Breast <span class="menu-badge">NEW</span></span>
+                            <span class="menu-item-price">$33.95</span>
+                        </div>
+                        <div class="menu-item-description">Flaquelle of chicken, blue cheese, rosemary beans.</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Salmon Steak</span>
+                            <span class="menu-item-price">$41.95</span>
+                        </div>
+                        <div class="menu-item-description">Salmon, butter, lemon juice, onion, garlic & salad.</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Chicken Crispy</span>
+                            <span class="menu-item-price">$33.95</span>
+                        </div>
+                        <div class="menu-item-description">Smoked quail, crispy egg, spelt, girolles, parsley.</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Grilled Fillet <span class="menu-badge">CHEF'S SPECIAL</span></span>
+                            <span class="menu-item-price">$26.95</span>
+                        </div>
+                        <div class="menu-item-description">Pork fillet, ginger, garlic, honey, pepper & canola oil.</div>
+                    </div>
+                </div>
+                
+                <!-- Desserts Section -->
+                <div class="menu-section">
+                    <h2 class="menu-section-title">DESSERTS</h2>
+                    <p class="text-center mb-4">Sweet delights to end your meal</p>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Chocolate Fondant <span class="menu-badge">POPULAR</span></span>
+                            <span class="menu-item-price">$12.95</span>
+                        </div>
+                        <div class="menu-item-description">Warm chocolate cake with a gooey center, served with vanilla ice cream.</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Crème Brûlée</span>
+                            <span class="menu-item-price">$10.95</span>
+                        </div>
+                        <div class="menu-item-description">Classic vanilla custard with a caramelized sugar crust.</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Seasonal Fruit Tart</span>
+                            <span class="menu-item-price">$9.95</span>
+                        </div>
+                        <div class="menu-item-description">Buttery pastry filled with vanilla cream and topped with fresh seasonal fruits.</div>
+                    </div>
+                </div>
+                
+                <!-- Drinks Section -->
+                <div class="menu-section">
+                    <h2 class="menu-section-title">DRINKS</h2>
+                    <p class="text-center mb-4">Refreshing beverages to complement your meal</p>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Signature Cocktails</span>
+                            <span class="menu-item-price">$14.95</span>
+                        </div>
+                        <div class="menu-item-description">Ask your server for our rotating selection of craft cocktails.</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Wine Selection</span>
+                            <span class="menu-item-price">From $9.95/glass</span>
+                        </div>
+                        <div class="menu-item-description">Carefully curated wines from around the world.</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Fresh Juices <span class="menu-badge">HEALTHY</span></span>
+                            <span class="menu-item-price">$6.95</span>
+                        </div>
+                        <div class="menu-item-description">Freshly squeezed seasonal fruits and vegetable juices.</div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <span class="menu-item-name">Artisanal Coffee</span>
+                            <span class="menu-item-price">$4.95</span>
+                        </div>
+                        <div class="menu-item-description">Locally roasted coffee beans, prepared to your preference.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

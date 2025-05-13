@@ -1,9 +1,10 @@
 
 :root {
   --primary-color: #0d3b45;
-  --secondary-color: #c9a87c;
+  --secondary-color: #F7D8A0;
+  --tertiary-color: #C7A254;
   --dark-color: #0a2930;
-  --dark-blue: #052733;
+  --dark-blue: #003B51;
   --deep-blue: #031b24;
   --light-color: #f8f9fa;
   --font-primary: 'Cinema Sunday', serif;
@@ -76,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .btn-gold {
-  background-color: var(--secondary-color);
+  background-color: var(--light-color);
   color: var(--dark-blue);
   text-decoration: none;
   font-weight: bold;
@@ -86,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-gold:hover {
-  background-color: var(--light-color);
+  background-color: var(--secondary-color);
   color: var(--dark-blue);
 }
 
@@ -424,14 +425,14 @@ h1 {
   font-size: 1.1rem;
   font-weight: 400;
   line-height: 1.6;
-  color: #b0b0b0;
+  color: #899BA2;
 }
 
 .welcome-text2 {
   font-size: 1.3rem;
   font-weight: 400;
   line-height: 1.6;
-  color: #b0b0b0;
+  color: #899BA2;
 }
 
 .divider-img {
@@ -446,6 +447,93 @@ h1 {
   color: var(--secondary-color);
   margin-bottom: 20px;
 }
+
+.image-hover-zoom {
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+
+.image-hover-zoom img {
+  transition: transform 0.4s ease;
+}
+
+.image-hover-zoom:hover img {
+  transform: scale(1.05); /* zoom in */
+}
+
+.feature-section {
+  background-color: #00435c;
+  padding: 60px 0;
+
+}
+.team-section {
+  background-color: var(--dark-blue);
+  padding: 60px 0;
+}
+
+.team-member-box {
+  color: #899BA2;
+  background-color: rgba(33, 37, 41, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.team-member-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons a {
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--secondary-color);
+}
+
+.testimonial-section {
+  background-color: var(--dark-color);
+  padding: 60px 0;
+}
+
+.testimonial-box {
+  background-color: #fff;
+  border-left: 4px solid var(--secondary-color);
+}
+
+/* Ensure the testimonials container has the proper overflow */
+.testimonials-section {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Add a sliding effect to the testimonials */
+.testimonial-item {
+    animation: slideEffect 30s infinite;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+}
+
+/* Animation for sliding between testimonials */
+@keyframes slideEffect {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    33% { opacity: 1; }
+    40% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* Adjust the indicator (ellipsis) */
+.testimonial-indicator {
+    font-size: 24px;
+    color: var(--secondary-color);
+    font-family: var(--font-tertiary);
+}
+
 
 .food-image {
   height: 200px;
@@ -512,6 +600,14 @@ h1 {
   padding: 40px 0;
 }
 
+.input-icon {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+
 .category-box {
   position: relative;
   height: 580px;
@@ -549,7 +645,7 @@ h1 {
 }
 
 .booking-form {
-  background-color: rgba(10, 41, 48, 0.8);
+  /* background-color: rgba(10, 41, 48, 0.8); */
   padding: 30px;
   border-radius: 5px;
 }
@@ -635,6 +731,13 @@ h1 {
   ;
 }
 
+.reservation-section {
+  background: url('/assets/about/Reserve-banner.png') no-repeat center center;
+  background-size: cover;
+  height: 80vh;
+  padding: 100px 0;
+}
+
 .social-gallery {
   background-color: #00435c;
   padding: 60px 0;
@@ -659,6 +762,7 @@ h1 {
 .gallery-item:hover img {
   transform: scale(1.05);
 }
+
 
 .info-section {
     background-color: var(--primary-color);

@@ -48,6 +48,12 @@
       width: 100%;
     }
     
+    .features-grid,
+    .team-grid,
+    .values-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     .booking-form {
       margin-top: 30px;
       margin-bottom: 30px;
@@ -95,6 +101,9 @@
       padding: 40px 0 20px 0;
     }
     
+    .features-grid, .team-grid{
+      grid-template-columns: repeat(2, 1fr);
+    }
     .category-box {
       height: 350px;
       margin-bottom: 20px;
@@ -149,6 +158,10 @@
     .navbar-toggler-icon {
       width: 1.2rem !important;
       height: 1.2em !important;
+    }
+    
+    .features-grid, .team-grid{
+      grid-template-columns: 1fr;
     }
     
     .carousel-item {
